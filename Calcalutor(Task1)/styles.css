@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #DDF2FD;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: #9BBEC8;
+  }
+  
+  .display {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: right;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4F81C7; /* General button color */
+    color: white;
+  }
+  
+  button.operator {
+    background-color: #64C4ED; /* Different shade for operators */
+  }
+  
+  button.enter {
+    background-color: #4F81C7; /* Distinct color for "=" button */
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
